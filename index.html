@@ -6,21 +6,56 @@
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/index.css" />
-    <title>Get Meme</title>
+    <title>Translator</title>
   </head>
-  <body>
+  <body
+    class="bg-secondary vh-100 d-flex justify-content-center align-items-center"
+  >
     <div
-      class="d-flex flex-column p-5 align-items-center vh-100 gap-3"
-      id="Main"
+      class="dark d-flex flex-column justify-content-center align-items-center w-auto p-4 rounded-3 gap-4"
     >
-      <h1 class="text-decoration-underline text-danger">
-        Enter Number From 0 to 99
+      <h1 class="text-light bg-primary p-2 rounded-3 fw-bold">
+        Translator App
       </h1>
-      <input type="text" class="bg-danger border-0 p-1 text-light" id="Input" />
-      <button class="btn btn-danger text-warning" id="btn">Show Meme</button>
-      <div class="text-center w-75" id="photoDiv"></div>
+      <div class="d-flex gap-2">
+        <div
+          class="d-flex flex-column justify-content-center align-items-center gap-3"
+        >
+          <textarea
+            class="bg-secondary border-2 text-light p-1 fw-bold"
+            name=""
+            id="firstLang"
+            rows="10"
+            cols="23"
+          ></textarea>
+          <select
+            name="English"
+            id="selectFirst"
+            class="w-50 p-1 bg-dark text-light"
+          ></select>
+        </div>
+        <div
+          class="d-flex flex-column justify-content-center align-items-center gap-3"
+        >
+          <textarea
+            class="bg-dark border-2 text-light p-1 fw-bold"
+            name="Arabic"
+            id="secondLang"
+            rows="10"
+            cols="23"
+            disabled
+          ></textarea>
+          <select
+            name="English"
+            id="selectSecond"
+            class="w-50 p-1 bg-dark text-light"
+          ></select>
+        </div>
+      </div>
+      <button class="btn btn-primary bg-transparent text-primary p-2" id="btn">
+        Translate
+      </button>
     </div>
-
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/index.js"></script>
   </body>
